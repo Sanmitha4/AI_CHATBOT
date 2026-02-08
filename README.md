@@ -58,84 +58,69 @@ pip install flask flask-sqlalchemy flask-login python-dotenv
 ```
 
 ### Step 3:Project file structure
-Ensure your project follows this structure:
+
+## Project File Structure
 
 ai-chatbot/
-├── app.py              # Main Flask application
-├── .env                # Environment variables
-├── database.db         # SQLite database (auto-generated)
-├── templates/          # HTML templates
-│   ├── index.html      # Chat interface
-│   ├── login.html      # Login page
-│   └── signup.html     # Registration page
-└── requirements.txt    # Project dependencies
+├── app.py              - Main Flask application  
+├── .env                - Environment variables  
+├── database.db         - SQLite database (auto-generated)  
+├── templates/          - HTML templates  
+│   ├── index.html      - Chat interface  
+│   ├── login.html      - Login page  
+│   └── signup.html     - Registration page  
+└── requirements.txt    - Python dependencies  
 
-### Usage
-Start the Flask server
-``` bash
-python app.py
-```
+## How to Run the Project
 
-Open the application
-
-Navigate to the following URL in your browser:
-```
-
+1. Install the required dependencies using `requirements.txt`
+2. Start the Flask server by running:
+``` python app.py```
+3. Open your browser and go to:
 http://127.0.0.1:5000
-```
 
-Getting Started
 
-1.Go to the Sign Up page and create a new account
-2.Log in using your credentials
-3.Enter your message in the chat input field
-4.Press Enter or click Send
+## Application Usage
 
-Configuration
+- Navigate to the Sign Up page and create a new account  
+- Log in using your registered credentials  
+- Enter a message in the chat input field  
+- Press Enter or click the Send button to interact with the chatbot  
 
-Create a .env file in the root directory and add the following:
-```
-API_KEY=your_ai_api_key_here
+## Environment Configuration
+
+Create a `.env` file in the root directory and add:
+```API_KEY=your_ai_api_key_here
 SECRET_KEY=your_random_secret_string_here
-```
+``` 
+
+Note:
+- Do not share the `.env` file
+- Do not upload it to public repositories
+
+## File Description
+
+- `app.py` handles routing, authentication, and chatbot logic  
+- `database.db` stores user data securely  
+- `templates` contains all frontend HTML pages  
+- `requirements.txt` lists required Python libraries  
+- `.env` stores sensitive configuration values  
+
+## Contribution Guidelines
+
+- Report issues using the GitHub Issues section  
+- Follow PEP 8 coding standards  
+- Create separate branches for new features  
+- Clearly explain changes in pull requests  
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For any issues or queries, refer to this README or use the project issue tracker.
 
 
 
 
-Project Structure Explained
-
-app.py – Handles routing, authentication, and chatbot logic
-
-database.db – Stores user credentials securely
-
-templates/ – Contains HTML files for UI pages
-
-requirements.txt – Lists all Python dependencies
-
-.env – Stores sensitive keys and secrets
-
-Contributing
-
-Contributions are welcome and encouraged.
-
-Report Bugs: Use the GitHub Issues tab
-
-Follow Standards: Write clean code following PEP 8
-
-Pull Requests:
-
-Create a separate branch for each feature
-
-Clearly describe the changes made
-
-License
-
-This project is licensed under the MIT License and is free to use and modify.
-
-Contact and Support
-
-For help or questions:
-
-Use the project’s issue tracker
-
-Refer to this README for setup and troubleshooting guidance
